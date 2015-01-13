@@ -1,6 +1,4 @@
-# HTML/CSS Intro
-
-## HTML
+## HTML Intro
 
 #### Elements of HTML
 
@@ -74,16 +72,6 @@ You can use any word as a tag, but browsers only know what to do with some of th
 * `<button>` - I bet you can guess
 * `<input>` - Collects user input, defined by `type` attribute
 
-`<input type="radio" />` <input type="radio" />
-
-`<input type="checkbox" />` <input type="checkbox" />
-
-`<input type="text" />` <input type="text" />
-
-`<input type="password" />` <input type="password" />
-
-`<input type="file" />` <input type="file" />
-
 #### Generic Section/Content Tags
 
 * `<div>` - Generic content section
@@ -96,10 +84,7 @@ You can use any word as a tag, but browsers only know what to do with some of th
 * `src` - used by `<script>` and `<img>`
 * `href` - used by `<link>` and `<a>`
 
-## CSS
-
-
 
 ## References
 
-[MDN HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+[Mozilla - HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
