@@ -65,6 +65,7 @@ You can use any word as a tag, but browsers only know what to do with some of th
 * `<ul>` - Unordered list
 * `<li>` - List item (for use in `<ol>` and `<li>`)
 * `<h1>`, `<h2>`,.. `<h6>` - Headings
+* `<table>`, `<tr>`, `<td>` - Table, row, cell
 
 #### Interactive Element Tags
 
