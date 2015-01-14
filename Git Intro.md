@@ -28,26 +28,11 @@
 5. `git commit` to create a checkpoint (with message)
 6. `git push` to update remote repo to current state
 
-#### Branches
-
-We'll talk a lot more about branches later on. For now, here's what we need to understand conceptually.
-
-* Git creates a timeline of commits called a "tree"; all commits are part of a branch of that tree
-* When a branch is created, any file changes made on the branch are kept separate from any file changes made on the trunk
-* A branch's changes can be merged back into the trunk (we'll worry about how later)
-
-*Creating a new branch*
-
-`git branch new_branch_name`
-
-*Changing from one branch to another*
-
-`git checkout destination_branch_name`
-
 #### Other Commands
 
 * `git log` - shows commits and messages
 * `git checkout` - also does...
     * Reset changes made to *unstaged* file
     * Change files to a specific commit
+    * Change files to a specific branch
 * `git tag` - creates named checkpoint for easy return
