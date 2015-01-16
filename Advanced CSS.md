@@ -47,7 +47,15 @@ If an element is "positioned", the following properties will work to specificall
 
 #### `float`
 
-#### `z-index`
+An alternate way to determine how an element is drawn relative to other elements. The possible values are:
+
+* `none` - Default, doesn't float
+* `left` - This element is removed from the flow and drawn along the left side of its container. Elements following this are drawn *around* this element.
+* `right` - Same thing, other side.
+
+Unlike `position:absolute`, floated elements are drawn in a separate layer, so that two consecutive elements with `float:left` will be drawn adjacent to one another.
+
+Use `clear:both` on an element to establish a new float layer after it.
 
 #### References
 
