@@ -67,12 +67,6 @@ You can use any word as a tag, but browsers only know what to do with some of th
 * `<h1>`, `<h2>`,.. `<h6>` - Headings
 * `<table>`, `<tr>`, `<td>` - Table, row, cell
 
-#### Interactive Element Tags
-
-* `<select>` - Dropdown list containing `<option>`
-* `<button>` - I bet you can guess
-* `<input>` - Collects user input, defined by `type` attribute
-
 #### Generic Section/Content Tags
 
 * `<div>` - Generic content section
