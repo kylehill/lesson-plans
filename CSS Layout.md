@@ -1,4 +1,4 @@
-## Advanced CSS
+## CSS Layout
 
 #### Box Model
 
