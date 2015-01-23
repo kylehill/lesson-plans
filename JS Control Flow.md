@@ -2,7 +2,11 @@
 
 #### Code Blocks
 
-Important definition: A **code block** is any collection of statements that is bounded by curly braces - `{` and `}`. Code blocks can be nested inside of each other.
+Important definition: A **code block** is any collection of statements that is bounded by curly braces - `{` and `}`. 
+
+(**Note:** This is kind of misstated, but it's a helpful context for understanding this lesson and the next.)
+
+Code blocks can be nested inside of each other.
 
 ```js
 { 
