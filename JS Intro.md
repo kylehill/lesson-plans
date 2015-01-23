@@ -76,20 +76,6 @@ x = "Hey, am I a string now?";
 x = true;
 ```
 
-#### Expressions
-
-Variables can contain the results of an expression, and be used inside of expressions.
-
-```js
-var kylesAge = 2015 - 1984;
-
-var canKyleDrinkLegally = myAge > 21;
-
-var canKyleRetireYet = myAge > 65;
-
-var greeting = "My name is Kyle and I am " + kylesAge + " years old";
-```
-
 #### Comments
 
 ```js

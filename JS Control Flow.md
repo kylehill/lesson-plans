@@ -1,29 +1,5 @@
 ## JavaScript Control Flow
 
-#### Equality Operators
-
-`===` ("triple equals") compares two values without "type coercion". 
-
-`==` ("double equals") compares two values while attempting type coercion.
-
-```js
-42 === "42" // false
-42 == "42" // true
-42 == "41" // false
-```
-
-`!==` and `!=` are the negative check for value equality comparison; `!==` does not attempt type coercion.
-
-```js
-42 !== "42" // true
-42 != "42" // false
-42 != "41" // true
-```
-
-`>` and `<` work as you'd expect for "greater than"/"less than".
-
-`>=` and `<=` are the "greather than or equal to"/"less than or equal to" counterparts.
-
 #### Code Blocks
 
 Important definition: A **code block** is any collection of statements that is bounded by curly braces - `{` and `}`. Code blocks can be nested inside of each other.
@@ -141,30 +117,14 @@ console.log("done looping")
 
 /* Prints:
 "before looping"
-"The value of x is 0"
-"The value of x is 1"
-"The value of x is 2"
-"The value of x is 3"
-"The value of x is 4"
+"The value of i is 0"
+"The value of i is 1"
+"The value of i is 2"
+"The value of i is 3"
+"The value of i is 4"
 "done looping"
 */
 ```
 
 Note: `variable++` is shorthand for `variable = variable + 1`.
 
-#### Truthiness
-
-Yes, that's a real thing. Welcome to JavaScript.
-
-The following values are considered by JS to be **falsy**:
-
-* `undefined`
-* `""` (empty string)
-* `0`
-* `false`
-* `null`
-* `NaN` ("not a number", the result of many math errors)
-
-**All other values are truthy.** This includes the strings `"undefined"`, `"0"`, `"false"`, `"null"` and `"NaN"`.
-
-Truthiness is relevant for a few things, but specifically for fulfilling or failing preconditions on code blocks.
