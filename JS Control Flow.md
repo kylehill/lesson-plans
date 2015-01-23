@@ -24,23 +24,6 @@
 
 `>=` and `<=` are the "greather than or equal to"/"less than or equal to" counterparts.
 
-#### Truthiness
-
-Yes, that's a real thing. Welcome to programming.
-
-The following values are considered by JS to be **falsy**:
-
-* `undefined`
-* `""` (empty string)
-* `0` (not string)
-* `false`
-* `null`
-* `NaN` ("not a number", the result of most math errors)
-
-**All other values are truthy.** 
-
-Truthiness is relevant for a few things, but specifically for fulfilling or failing preconditions on code blocks.
-
 #### Code Blocks
 
 Important definition: A **code block** is any collection of statements that is bounded by curly braces - `{` and `}`. Code blocks can be nested inside of each other.
@@ -56,7 +39,7 @@ Important definition: A **code block** is any collection of statements that is b
 
 There's no reason to do this unless you're attaching some precondition to the beginning of the code block.
 
-#### If/Else
+#### `if`/`else`
 
 The most common precondition is `if`.
 
@@ -106,17 +89,82 @@ else {
 }
 ```
 
-#### Loops
+#### `while`
 
-A `while` loop will execute a code block as long as a condition is truthy.
+A `while` loop will execute a code block as long as a condition is true at the end of the code block's execution.
 
 ```js
 var x = 0;
+
+console.log("before looping")
 
 while (x < 5) {
   console.log("The value of x is " + x);
   x = x + 1;
 }
+
+console.log("done looping")
+
+/* Prints:
+"before looping"
+"The value of x is 0"
+"The value of x is 1"
+"The value of x is 2"
+"The value of x is 3"
+"The value of x is 4"
+"done looping"
+*/
 ```
 
 Be aware -- the code block will execute over, and over, and over again forever if the precondition is not met.
+
+#### `for`
+
+A `for` loop is a more structured way to execute a code block multiple times.
+
+The precondition for a `for` code block takes three statements inside parentheses:
+
+* Initial declarations and/or definitions
+* End conditions to check after every iteration
+* Variable changes after every iteration
+
+In most cases, `for` blocks end up working like this:
+
+```js
+console.log("before looping")
+
+for (var i = 0; i < 5; i++) {
+    console.log("The value of i is " + i);
+}
+
+console.log("done looping")
+
+/* Prints:
+"before looping"
+"The value of x is 0"
+"The value of x is 1"
+"The value of x is 2"
+"The value of x is 3"
+"The value of x is 4"
+"done looping"
+*/
+```
+
+Note: `variable++` is shorthand for `variable = variable + 1`.
+
+#### Truthiness
+
+Yes, that's a real thing. Welcome to JavaScript.
+
+The following values are considered by JS to be **falsy**:
+
+* `undefined`
+* `""` (empty string)
+* `0`
+* `false`
+* `null`
+* `NaN` ("not a number", the result of many math errors)
+
+**All other values are truthy.** This includes the strings `"undefined"`, `"0"`, `"false"`, `"null"` and `"NaN"`.
+
+Truthiness is relevant for a few things, but specifically for fulfilling or failing preconditions on code blocks.
