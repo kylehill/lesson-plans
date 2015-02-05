@@ -2,9 +2,9 @@
 
 #### Fundamentals
 
-**Functional programming** is the name given to the concept of executing a generic *iterator* function on each member in a collection, and producing a result consistent with a standard programming paradigm.
+**Functional programming** is the name given to the concept of calling a generic *iterator* function with each member in a collection, and producing a result consistent with a standard programming paradigm.
 
-Once you understand it, functional programming is super-easy in JavaScript, because JS will treat functions like any other variable, and so they can be easily passed as a parameter to another function.
+At least once you grok it, functional programming is super-easy in JavaScript, since JS will treat functions like any other variable, and so they can be easily passed as a parameter to another function.
 
 #### Patterns
 
@@ -22,7 +22,7 @@ Let's discuss each in detail.
 
 Mapping is useful for **transforming** the members of an array.
 
-Map iterator functions have the parameter signature of `(value, index)`.
+Map iterator functions have the parameter signature of `function(value, index)`.
 
 ```js
 var doubler = function(value, index) {
@@ -45,7 +45,7 @@ console.log(squaredArray); // [ 1, 4, 9, 16 ]
 
 Filtering is useful for, well, **filtering** the members of an array into a specific subset.
 
-Like map, filter iterator functions have the parameter signature of `(value, index)`.
+Like map, filter iterator functions have the parameter signature of `function(value, index)`.
 
 ```js
 var odds = function(value, index) {
@@ -70,7 +70,7 @@ Reducing is useful for **distilling** information from the members of an array i
 
 Unlike map and filter, reduce functions require another value when being called -- the seed value that the memory starts at.
 
-Reduce iterator functions have the parameter signature of `(memory, value, index)`.
+Reduce iterator functions have the parameter signature of `function(memory, value, index)`.
 
 ```js
 var joinAsString = function(memory, value, index) {
